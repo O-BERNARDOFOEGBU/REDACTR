@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Redactor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Text Redactor</h1>
+      <label for="originalText">Original Text:</label>
+      <textarea id="originalText" rows="6"></textarea>
+
+      <label for="wordsToRedact">Words to Redact (separated by space):</label>
+      <input type="text" id="wordsToRedact" />
+
+      <label for="replacementText">Replacement Text:</label>
+      <input type="text" id="replacementText" placeholder="Default: ****" />
+
+      <button onclick="redactText()">Redact Now</button>
+
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
